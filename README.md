@@ -1,6 +1,6 @@
-### Using the HTML5 Drag and Drop API
+## Using the HTML5 Drag and Drop API
 
-## Creating draggable content
+### Creating draggable content
 
 The HTML5 Drag and Drop (DnD) API means that we can make almost any element on our page draggable. In this post we'll explain the basics of Drag and Drop.
 Creating draggable content #
@@ -11,11 +11,19 @@ To make an object draggable set draggable=true on that element. Just about anyth
 
 In our example we're creating an interface to rearrange some columns, which have been laid out with CSS Grid. The basic markup for my columns looks like this, with each column having the draggable attribute set to true.
 
+
+
+
+```
 <div class="container">
-  <div draggable="true" class="box">A</div>
-  <div draggable="true" class="box">B</div>
-  <div draggable="true" class="box">C</div>
+     <div draggable="true" class="box">A</div>
+     <div draggable="true" class="box">B</div>
+     <div draggable="true" class="box">C</div>
 </div>
+```
+  
+ 
+
 
 Here's the CSS for my container and box elements. Note that the only CSS related to DnD functionality is the cursor: move property. The rest of the code just controls the layout and styling of the container and box elements.
 
