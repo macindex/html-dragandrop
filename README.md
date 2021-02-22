@@ -27,6 +27,7 @@ In our example we're creating an interface to rearrange some columns, which have
 
 Here's the CSS for my container and box elements. Note that the only CSS related to DnD functionality is the cursor: move property. The rest of the code just controls the layout and styling of the container and box elements.
 
+```
 .container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -40,6 +41,7 @@ Here's the CSS for my container and box elements. Note that the only CSS related
   padding: 10px;
   cursor: move;
 }
+```
 
 At this point you will find that you can drag the items, however nothing else will happen. To add the DnD functionality we need to use the JavaScript API.
 Listening for dragging events #
